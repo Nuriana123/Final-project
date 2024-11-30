@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column; /* Vendos elementet në një kolone */
+  align-items: center; /* Qendrimi vertikalisht në qendër */
+  background-color: orange; /* Ngjyra e sfondit */
+  padding: 3em; /* Hapësira rreth header-it */
+}
+
+.information {
+  display: flex;
+  justify-content: space-between; /* Vendos adresën dhe telefonin në skajet e kundërta */
+  width: 100%; /* E bën që të dyja të zënë hapësirën e plotë */
+}
+
+.address-phone-container {
+  display: flex;
+  justify-content: space-between; /* Qendrimi midis adresës dhe numrit të telefonit */
+  width: 100%; /* Zgjat hapësirën e plotë */
+}
+
+.adress-information, .phone-information {
+  display: flex;
+  align-items: center; /* Siguron që ikona dhe teksti të jenë në të njëjtin nivel */
+}
+
+.map-link, .phone-number {
+  color: white; /* Ngjyra e lidhjeve */
+  text-decoration: none; /* Heq vijën poshtë */
+  font-size: 1.1em; /* Përshtat fontin për lidhjet */
+  display: flex;
+  align-items: center; /* Qendrimi vertikalisht i ikonave dhe tekstit */
+}
+
+.divider {
+  border: none; /* Heq ndonjë kufizim të parazgjedhur */
+  border-top: 2px solid white; /* Ngjyra dhe trashësia e vijës */
+  width: 100%; /* Gjerësia e vijës */
+  margin: 2px auto; /* Marginë për të qendruar në qendër dhe hapësirë lart dhe poshtë */
+  
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center; /* Qendron menunë në qendër */
+  align-items: center; /* Qendrimi vertikalisht */
+  width: 100%; /* Siguron që të zërë hapësirën e plotë */
+  margin-left: 30em;
+}
+
+.menu {
+  list-style-type: none; /* Heq pikat */
+  margin: 0; /* Heq marginin e parazgjedhur */
+  padding: 0; /* Heq padding-un e parazgjedhur */
+  display: flex; /* Shfaq elementet në një rresht */
+  gap: 20px; /* Krijon hapësirë mes elementeve */
+  margin-top: 2em;
+  
+}
+
+.menu a {
+  text-decoration: none; /* Heq vijën poshtë */
+  color: white; /* Ngjyra e lidhjeve */
+  font-size: 1.1em; /* Përshtat fontin për lidhjet */
+  
+}
+
+.icon-container {
+  display: flex;
+  gap: 20px; /* Hapësira midis ikonave */
+  margin-left: 400px; /* Hapësirë midis menutë dhe ikonave */
+  margin-top: 2em;
+    align-items: center;
+    margin-right: 15em;
+}
+
+.icon-container i {
+  color: white; /* Ngjyra e ikonave */
+  font-size: 1.5em; /* Madhësia e ikonave */
+}
+button {
+  border: none;
+  border-radius: 20em; /* Kjo do ta bëjë butonin të ketë qoshe të rrumbullakosura */
+  padding: 0 3.2em; /* Hapësira brenda butonit (sipër dhe poshtë, majtas dhe djathtas) */
+  text-align: center;
+ background-color: white;
+color: black;
+  cursor: pointer; /* Ndryshon kursori kur kalon mbi butonin */
+  font-size: 1.1em; /* Madhësia e fontit */
+  width: 100%; /* E bën butonin të zërë të gjithë gjerësinë e disponueshme */
+  max-width: 300px; /* Ose ndonjë gjerësi maksimale që dëshiron */
+  margin-top: 1em; /* Hapësira sipër butonit */
+  transition: background-color 0.3s, transform 0.3s; /* Efekt i butë për ndryshimin e ngjyrës dhe transformimin */
+}
+
+button:hover {
+ background-color: orangered;
+  transform: scale(1.05); /* Shton një efekt rritjeje */
+}
