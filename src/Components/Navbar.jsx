@@ -1,8 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import Login from "./Login";
 
 const Navbar = () => {
+  const [searchQuery, setSearchQuery] = useState("");
+  const [isSearchVisible, setIsSearchVisible] = useState(false);
+  const [isLoginVisible, setIsLoginVisible] = useState(false);
+
+  const handleSearchChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+  const handleSearchSubmit = (event) => {
+    event.preventDefault();
+   
+  };
+
+  const toggleSearchVisibility = () => {
+    setIsSearchVisible(!isSearchVisible);
+  };
+
+  const handleClearSearch = () => {
+    setSearchQuery("");
+    setIsSearchVisible(false);
+  };
+
+  
+  const toggleLoginVisibility = () => {
+    setIsLoginVisible(!isLoginVisible);
+  };
+
+  
+  const closeLoginForm = () => {
+    setIsLoginVisible(false);
+  };
+
   return (
     <>
       <header>
@@ -33,35 +68,136 @@ const Navbar = () => {
         <hr className="divider" />
 
         <div className="nav-bar">
-          <ul className="menu">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/menu">Menu</Link>
-            </li>
-            <li>
-              <Link to="/catering">Catering</Link>
-            </li>
-            <li>
-              <Link to="/shop">Shop</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
+          <div className="logo-menu-container">
+            <img src="/logo.png" alt="Logo" className="logo" />
+            <ul className="menu">
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/menu">Menu</Link>
+              </li>
+              <li>
+                <Link to="/catering">Catering</Link>
+              </li>
+              <li>
+                <Link to="/shop">Shop</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>
+            </ul>
+          </div>
 
           <div className="icon-container">
-            <i className="fa-solid fa-magnifying-glass"></i>
-            <i className="fa-regular fa-user"></i>
+            <div className="search-icon" onClick={toggleSearchVisibility}>
+              <i className="fas fa-search"></i>
+            </div>
+
+            {isSearchVisible && (
+              <form className="search-form" onSubmit={handleSearchSubmit}>
+                <input
+                  type="text"
+                  className="search-bar"
+                  placeholder="Search..."
+                  value={searchQuery}
+                  onChange={handleSearchChange}
+                />
+                <button type="submit" className="search-btn">
+                  <i className="fas fa-search"></i>
+                </button>
+                <i className="fas fa-times" onClick={handleClearSearch}></i>
+              </form>
+            )}
+
+          
+            <i className="fa-regular fa-user" onClick={toggleLoginVisibility}></i>
+
+           
+            {isLoginVisible && (
+              <div className="login-form-container">
+                <button className="close-login-btn" onClick={closeLoginForm}>
+                  <i className="fas fa-times"></i>
+                </button>
+                <Login />
+              </div>
+            )}
+
             <i className="fa-regular fa-heart"></i>
             <div className="btn-menu">
               <button>0 Items: L 0</button>
-              <i class="fa-sharp fa-thin fa-cart-shopping-fast"></i>
+              <i className="fa-sharp fa-thin fa-cart-shopping-fast"></i>
             </div>
           </div>
         </div>
       </header>
+
+      <div
+        id="carouselExampleFade"
+        className="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div className="carousel-inner">
+          
+          <div className="carousel-item active">
+            <img src="carusel1.jpg" className="d-block w-100" alt="Slide 1" />
+            <div className="carousel-caption d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle text-center">
+              <div>
+                <p className="first-paragraph">Foods that’s fast but never rushed</p>
+                <button className="btn btn-light">Order Now</button>
+              </div>
+            </div>
+          </div>
+
+         
+          <div className="carousel-item">
+            <img src="carusel2.jpeg" className="d-block w-100" alt="Slide 2" />
+            <div className="carousel-caption d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle text-center">
+              <div>
+                <p className="first-paragraph">Bringing flavor to your event</p>
+                <button className="btn btn-light">Order Now</button>
+              </div>
+            </div>
+          </div>
+
+          
+          <div className="carousel-item">
+            <img src="carusel3.jpeg" className="d-block w-100" alt="Slide 3" />
+            <div className="carousel-caption d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle text-center">
+              <div>
+                <p className="first-paragraph">Savour the moment with our catering</p>
+                <button className="btn btn-light">Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div>
     </>
   );
 };

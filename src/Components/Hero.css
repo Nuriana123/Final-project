@@ -1,0 +1,55 @@
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .tacos {
+    flex: 1;
+    background-color: #F7941D;
+    padding: 40px;
+    
+  }
+  
+  .salads {
+    flex: 1;
+    background-color: #D6E664;
+    padding: 10px;
+    
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .taco-btn {
+    background-color:white;
+    color: black;
+  }
+  
+  .salad-btn {
+    background-color: white;
+    color: black;
+    
+  }
+  
+  .tacos h1, .salads h1 {
+    margin-bottom: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
