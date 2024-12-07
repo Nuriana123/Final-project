@@ -6,7 +6,8 @@ import Menu from "./Components/Menu";
 import Catering from "./Components/Catering";
 import Shop from "./Components/Shop";
 import Contact from "./Components/Contact";
-//testing push
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (

@@ -1,0 +1,23 @@
+.single-product-container {
+  padding: 30px;
+  border: 4px #cccccc dotted;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+}
+.product-name{
+font-weight: 1000;
+color: black;
+}
+.product-image{
+
+}
+.product-description{
+
+}
+.product-price{
+
+}
+.right{
+    margin: 20px;
+}

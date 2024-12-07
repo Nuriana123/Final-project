@@ -1,0 +1,15 @@
+.all-products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.all-button-categories{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 100px 0px 100px;
+}
+.all-button-categories button{
+    
+}
