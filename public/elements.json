@@ -1,0 +1,486 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "photoUrl": "./IMAGES/Pizza-Alfredo.jpg",
+        "name": "Pizza Alfredo",
+        "description": "salcë e freskët, mocarela, fileto pule, pançetë viçi, pomodorini, borzilok, rigon, krem djathi, vaj ulliri, majdanoz",
+        "price": "L500",
+        "category":"Pizza"
+      },
+      {
+        "id": 2,
+        "photoUrl": "./IMAGES/New-York-Meatball-Pizza.jpg",
+        "name": "New York Meatball Pizza",
+        "description": "salcë e freskët, mocarela, qofte me mish viçi, rigon, qepë e kuqe, patate chips, vaj hudhrash",
+        "price": "L480",
+        "category":"Pizza"
+      },
+      {
+        "id": 3,
+        "photoUrl": "./IMAGES/Pizza-Baby.jpg",
+        "name": "Pizza Baby",
+        "description": "salcë e freskët, mocarela, gouda, patate frite, rigon, wudy, borzilok, ketchup",
+        "price": "L410",
+        "category":"Pizza"
+      },
+      {
+        "id": 4,
+        "photoUrl": "./IMAGES/pizza.jpg",
+        "name": "Pizza Boscaiola",
+        "description": "salcë e freskët, mocarela, kërpudha të freskëta, borzilok, rigon, salçiçe të freskët viçi",
+        "price": "L600",
+        "category":"Pizza"
+
+      },
+      {
+        "id": 5,
+        "photoUrl": "./IMAGES/Pizza-Chicken-Ham.jpg",
+        "name": "Pizza Bresaola & Rucola",
+        "description": "salcë e freskët karrote, mocarela, rukola, pomodorini, proshutë, brezaola, krem djathi, rigon",
+        "price": "L650",
+        "category":"Pizza"
+      },
+      {
+        "id": 6,
+        "photoUrl": "./IMAGES/Pizza-Boscaiola.jpg",
+        "name": "Pizza Chicken Ham",
+        "description": "salcë e freskët, mocarela, rukola, pomodorini, proshutë pule, sos i shefit, parmigiano, rigon",
+        "price": "L530",
+        "category":"Pizza"
+      },
+      {
+        "id": 7,
+        "photoUrl": "./IMAGES/Pizza-Diavola.jpg",
+        "name": "Pizza Diavola",
+        "description": "Salcë e freskët, mocarela, sallam pikant, pomodorini, fara speci, spec pikant",
+        "price": "L450",
+        "category":"Pizza"
+      },
+      {
+        "id": 8,
+        "photoUrl": "./IMAGES/Green-Healthy-Food-Delivery-App-Instagram-Post.jpg",
+        "name": "Pizza Omega 3",
+        "description": "salcë e freskët, mocarela, ton, qepë, ullinj, limon, borzilok, majdanoz, vaj ulliri extra i virgjër",
+        "price": "L590",
+        "category":"Pizza"
+      },
+      {
+          "id": 9,
+          "photoUrl": "./IMAGES/Pizza-Pistacchio-Tacchino.jpg",
+          "name": "Pizza Pistacchio & Tacchino",
+          "description": "salcë e freskët karrote, mocarela, proshutë gjeli, krem djathi, stika, vaj, borzilok",
+          "price": "L610",
+          "category":"Pizza"
+      },
+      {
+          "id": 10,
+          "photoUrl": "./IMAGES/2.jpg",
+          "name": "Sweet Love Burger",
+          "description": "qofte e freskët, french sos, chedar, domate, kastravec turshi, spec i kuq, patate frite, ketchup, majonezë, mustardë",
+          "price": "L490",
+          "category":"Burgers"
+      },
+      {
+        "id": 11,
+        "photoUrl": "./IMAGES/American-Hot-Dog.jpg",
+        "name": "American Hot Dog",
+        "description": "salçiçe shtëpie, qepë e karamelizuar, ketchup, majonezë, mustardë",
+        "price": "L320",
+        "category":"Burgers"
+      },
+      {
+        "id": 12,
+        "photoUrl": "./IMAGES/Big-Black-Burger.jpg",
+        "name": "Big Black Burger",
+        "description": "qofte e freskët, shnicel pule, chedar, domate, lakër e kuqe, qepë e kuqe, kastravec turshi, iceberg, patate frite, barbeque, ketchup",
+        "price": "L750",
+        "category":"Burgers"
+      },
+      {
+        "id": 13,
+        "photoUrl": "./IMAGES/Chicken-Club-Sandwich.jpg",
+        "name": "Chicken Club Sandwich",
+        "description": "bukë qumështi, chedar, sallatë jeshile, spec i kuq, fileto pule e freskët, patate frite, ketchup, majonezë, mustardë",
+        "price": "L450",
+        "category":"Burgers" 
+      },
+      {
+        "id": 14,
+        "photoUrl": "./IMAGES/Double-Giant-Burger.jpg",
+        "name": "Double Giant Burger",
+        "description": "qofte e freskët, shnicel pule, chedar, bacon viçi, kroketë djathi, domate, lakër e kuqe, qepë e kuqe, kastravec turshi, patate frite",
+        "price": "L820",
+        "category":"Burgers" 
+      },
+      {
+        "id": 15,
+        "photoUrl": "./IMAGES/Simply-the-Best.jpg",
+        "name": "Simply The Best",
+        "description": "qofte e freskët,  chedar, patate frite, ketchup, majonezë, mustardë",
+        "price": "L380",
+        "category":"Burgers" 
+      },
+      {
+        "id": 16,
+        "photoUrl": "./IMAGES/Western-Burger.jpg",
+        "name": "Western Burger",
+        "description": "qofte e freskët, onion rings, chedar, domate,  patate frite, ketchup, majonezë, mustardë",
+        "price": "L640",
+        "category":"Burgers" 
+      },
+      {
+        "id": 17,
+        "photoUrl": "./IMAGES/Western-Burger.jpg",
+        "name": "Red Rose Burger",
+        "description": "qofte e freskët, bacon viçi, chedar, domate, lakër e kuqe, qepë e kuqe, mente, patate frite, ketchup, majonezë, mustardë",
+        "price": "L640",
+        "category":"Burgers"
+      },
+      {
+        "id": 18,
+        "photoUrl": "./IMAGES/Western-Burger.jpg",
+        "name": "Vegetarian Burger",
+        "description": "kroketë djathi, perime, domate, chedar, sallatë jeshile, patate frite, ketchup, mustardë, majonezë",
+        "price": "L470",
+        "category":"Burgers"
+      },
+      {
+        "id": 19,
+        "photoUrl": "./IMAGES/Sallate-Uova-Tono.jpg",
+        "name": "Gustosa Salad",
+        "description": "radikio, iceberg, rukola, baby spinaq, fara kungulli, bajame, arra, susam, rrush i thatë, crema aceto, mjaltë, marinim",
+        "price": "L520",
+        "category":"Salads"
+      },
+      {
+        "id": 20,
+        "photoUrl": "./IMAGES/1-2-450x450.jpg",
+        "name": "Tropical Greens Salad",
+        "description": "radikio, iceberg, rukola, baby spinaq, rrepa, avokado, mango, pomodorini, kastravec, fara chia, sos vinegre, marinim",
+        "price": "L420",
+        "category":"Salads"
+      },
+      {
+        "id": 21,
+        "photoUrl": "./IMAGES/2-1.jpg",
+        "name": "Soup of the day",
+        "description": "Every day a different soup!",
+        "price": "L380",
+        "category":"Salads"
+      },
+      {
+        "id": 22,
+        "photoUrl": "./IMAGES/Sallate-Classic-Ceasar.jpg",
+        "name": "Classic Ceasar Salad",
+        "description": "iceberg, sallatë jeshile, fileto pule, misër, parmigiano, kruton, sos cezar, pançetë viçi, marinim",
+        "price": "L470",
+        "category":"Salads"
+      },
+      {
+        "id": 23,
+        "photoUrl": "./IMAGES/Sallate-Panzanella.jpg",
+        "name": "Panzanella Salad",
+        "description": "domate e blanzhuar, qepë, djath i bardhë, ullinj të zi, kruton, rigon, marinim",
+        "price": "L320",
+        "category":"Salads" 
+      },
+      {
+        "id": 24,
+        "photoUrl": "./IMAGES/Sallate-Uova-Gorgonzola.jpg",
+        "name": "Uova & Gorgonzola Salad",
+        "description": "kastravec, krem djathi, gorgonzola, koper, vezë, qepë e kuqe, marinim",
+        "price": "L370",
+        "category":"Salads" 
+      },
+      {
+        "id": 25,
+        "photoUrl": "./IMAGES/ouva-tono.jpg",
+        "name": "Uova & Tono Salad",
+        "description": "sallatë jeshile, ton, qepë, vezë, salcë rosso, majdanoz, fara lulekuqe, vaj ulliri extra virgin",
+        "price": "L380",
+        "category":"Salads" 
+      },
+      {
+        "id": 26,
+        "photoUrl": "./IMAGES/Sallate-Vitamina.jpg",
+        "name": "Vitamina Salad",
+        "description": "lakër e bardhë, karrota e freskët zhylien, kastravec, spec i kuq, majdanoz, limon",
+        "price": "L270",
+        "category":"Salads"
+      },
+      {
+        "id": 27,
+        "photoUrl": "./IMAGES/7-2-450x450.jpg",
+        "name": "Tacos me Chicken Fingers",
+        "description": "kroketë pule me susam, domate konkashe, qepë e kuqe, guakamola, salcë pikante",
+        "price": "L540",
+        "category":"Tacos"
+      },
+      {
+        "id": 28,
+        "photoUrl": "./IMAGES/3-2-450x450.jpg",
+        "name": "Tacos me karkaleca",
+        "description": "karkalec tempura, domate konkashe, qepë e kuqe, guakamola, salcë sour, lime, avocado",
+        "price": "L730",
+        "category":"Tacos"
+      },
+      {
+        "id": 29,
+        "photoUrl": "./IMAGES/2-3-450x450.jpg",
+        "name": "Tacos Classic",
+        "description": "ragu me mish viçi i freskët, domate konkashe, qepë e kuqe, guakamola, salcë sour, lime, avocado",
+        "price": "L610",
+        "category":"Tacos"
+      },
+      {
+        "id": 30,
+        "photoUrl": "./IMAGES/1000x1000-2.jpg",
+        "name": "Ravioli Rose",
+        "description": "salcë e freskët, pomodorini, krem qumështi, borzilok, hudhër, vaj ulliri extra i virgjër",
+        "price": "L450",
+        "category":"Pasta"
+      },
+      {
+        "id": 31,
+        "photoUrl": "./IMAGES/Untitled-design.jpg",
+        "name": "Linguini me Domate të Thata & Karkaleca",
+        "description": "salcë e freskët, domate të thata, borzilok, hudhër, vaj ulliri extra i virgjër, flex parmigiano",
+        "price": "L580",
+        "category":"Pasta"
+      },
+      {
+        "id": 32,
+        "photoUrl": "./IMAGES/1000x1000-1.jpg",
+        "name": "Spaghetti Pomodoro e Basilico",
+        "description": "mozzarella, krem brokoli, krem qumështi, hudhër, majdanoz, stika",
+        "price": "L390",
+        "category":"Pasta"
+      },
+      {
+        "id": 33,
+        "photoUrl": "./IMAGES/Paccheri-Chicken-Creamy.jpg",
+        "name": "Paccheri Chicken Creamy",
+        "description": "fileto pule, pesto e shtëpisë, stika pishe, krem qumështi, borzilok",
+        "price": "L490",
+        "category":"Pasta"
+      },
+      {
+        "id": 34,
+        "photoUrl": "./IMAGES/Rigatoni-Ragu.jpg",
+        "name": "Rigatoni & Ragu",
+        "description": "ragu me mish viçi i freskët, salcë domate e freskët, kripë, piper, majdanoz, qepë e thatë, karrotë, vaj ulliri, hudhër",
+        "price": "L520",
+        "category":"Pasta"
+      },
+      {
+        "id": 35,
+        "photoUrl": "./IMAGES/Penne-alla-Diavola.jpg",
+        "name": "Penne alla Diavola",
+        "description": "sallam pikant, spec i kuq, salcë domate e freskët, ullinj të zi, fara speci",
+        "price": "L450",
+        "category":"Pasta"
+      },
+      {
+        "id": 36,
+        "photoUrl": "./IMAGES/Pappardelle-Mare-e-Monti.jpg",
+        "name": "Pappardelle Mare e Monti",
+        "description": "karkaleca të freskët, porchini, borzilok, hudhër, vaj ulliri, krem qumështi",
+        "price": "L580",
+        "category":"Pasta"
+      },
+      {
+        "id": 37,
+        "photoUrl": "./IMAGES/Fusili-Broccoli-Mozzarella.jpg",
+        "name": "Fusili Broccoli & Mozzarella",
+        "description": "mozzarella, krem brokoli, krem qumështi, hudhër, majdanoz, stika",
+        "price": "L470",
+        "category":"Pasta"
+      },
+      {
+        "id": 38,
+        "photoUrl": "./IMAGES/tartuf.jpg",
+        "name": "Tartuf & Kërpudha të freskëta",
+        "description": "tartuf, kërpudha, krem qumështi, parmigiano, vaj ulliri ekstra i virgjër",
+        "price": "L560",
+        "category":"Risotto"
+      },
+      {
+        "id": 39,
+        "photoUrl": "./IMAGES/Milanese-Zafferano.jpg",
+        "name": "Milanese Zafferano",
+        "description": "shafran, stika pishe, parmigiano",
+        "price": "L440",
+        "category":"Risotto"
+      },
+      {
+        "id": 40,
+        "photoUrl": "./IMAGES/Calabria.jpg",
+        "name": "Risotto Calabria",
+        "description": "mish viçi i freskët, stika pishe, parmigiano, majdanoz, erëza",
+        "price": "L590",
+        "category":"Risotto"
+      },
+      {
+        "id": 41,
+        "photoUrl": "./IMAGES/Chicken-Pine-Nuts.jpg",
+        "name": "Risotto Chicken & Pine Nuts",
+        "description": "fileto pule e freskët, stika pishe, limon, majdanoz, erëza",
+        "price": "L490",
+        "category":"Risotto"
+      },
+      {
+        "id": 42,
+        "photoUrl": "./IMAGES/Mare-e-Monti.jpg",
+        "name": "Risotto Mare e Monti",
+        "description": "karkaleca të freskët, kërpudha, porchini, timo, majdanoz, erëza",
+        "price": "L580",
+        "category":"Risotto"
+      },
+      {
+        "id": 43,
+        "photoUrl": "./IMAGES/Primavera-al-Verde.jpg",
+        "name": "Primavera al Verde",
+        "description": "spinaq baby, bizele, misër, karrotë, brokoli, parmigiano, majdanoz, erëza",
+        "price": "L420",
+        "category":"Risotto"
+      },
+      {
+        "id": 43,
+        "photoUrl": "./IMAGES/Banana-Waffle.jpg",
+        "name": "Banana Waffle",
+        "description": "nutella, banane, biskotë, sheqer pluhur, akullore, shkopinj çokollate",
+        "price": "L420",
+        "category":"Crepes&Waffles"
+      },
+      {
+        "id": 44,
+        "photoUrl": "./IMAGES/Oreo-Waffle.jpg",
+        "name": "Oreo Waffle",
+        "description": "nutella, banane, biskotë, sheqer pluhur, akullore, m&m, shkopinj çokollate",
+        "price": "L490",
+        "category":"Crepes&Waffles"
+      },
+      {
+        "id": 45,
+        "photoUrl": "./IMAGES/Pistachio-Waffle.jpg",
+        "name": "Pistachio Waffle",
+        "description": "krem pistachio, sheqer pluhur, stika, akullore, shkopinj çokollate",
+        "price": "L760",
+        "category":"Crepes&Waffles"
+      },
+      {
+        "id": 46,
+        "photoUrl": "./IMAGES/Strawberry-Waffle.jpg",
+        "name": "Strawberry Waffle",
+        "description": "nutella, luleshtrydhe, sheqer pluhur, biskote oreo, akullore, shkopinj çokollate",
+        "price": "L560",
+        "category":"Crepes&Waffles"
+      },
+      {
+        "id": 47,
+        "photoUrl": "./IMAGES/Classic-French-Crepes.jpg",
+        "name": "Classic French Crepes",
+        "description": "nutella, banane, biskotë, shurup çokollate, sheqer pluhur",
+        "price": "L370",
+        "category":"Crepes&Waffles"
+      },
+      {
+        "id": 48,
+        "photoUrl": "./IMAGES/Strawberry-Nutella-Crepes.jpg",
+        "name": "Strawberry Nutella Crepes",
+        "description": "nutella, luleshtrydhe, biskotë oreo, shurup çokollate, sheqer pluhur",
+        "price": "L490",
+        "category":"Crepes&Waffles"
+      },
+      {
+        "id": 49,
+        "photoUrl": "./IMAGES/El-Mexico-Crepes.jpg",
+        "name": "El Mexico Crepes",
+        "description": "djath gouda, sallam pikant, misër, spec i kuq, salcë pikante",
+        "price": "L370",
+        "category":"Crepes&Waffles"
+      },
+      {
+        "id": 50,
+        "photoUrl": "./IMAGES/Lunch-Crepes.jpg",
+        "name": "Lunch Crepes",
+        "description": "pançetë viçi e freskët, mix djathrash, domate e freskët, gouda",
+        "price": "L420",
+        "category":"Crepes&Waffles"
+      },
+      {
+        "id": 51,
+        "photoUrl": "./IMAGES/Chicken-Ceasar-Crepes.jpg",
+        "name": "Chicken Ceasar Crepes",
+        "description": "gouda, fileto pule e freskët, domate e freskët, sos cezar, iceberg, parmigiano",
+        "price": "L490",
+        "category":"Crepes&Waffles"
+      },
+      {
+        "id": 52,
+        "photoUrl": "./IMAGES/Untitled-design-1.jpg",
+        "name": "Fileto Levreku me Perime",
+        "description": "Fileto levreku e zgarës, brokoli, karrotë, lulelakër, bizele",
+        "price": "L800",
+        "category":"MainDishes"
+      },
+      {
+        "id": 53,
+        "photoUrl": "./IMAGES/4.jpg",
+        "name": "Chicken Teriyaki",
+        "description": "oriz i bardhë & pulë e gatuar me salcë teriyaki, sweet chilli, susam",
+        "price": "L780",
+        "category":"MainDishes"
+      },
+      {
+        "id": 54,
+        "photoUrl": "./IMAGES/Tagliata-di-Vitello.jpg",
+        "name": "Tagliata di Vitello",
+        "description": "fileto viçi e freskët qumështi, patate amerikane, sos chilli, rukola, kërpudha, krem açeto",
+        "price": "L1820",
+        "category":"MainDishes"
+      },
+      {
+        "id": 55,
+        "photoUrl": "./IMAGES/Shnitzel-Viennese.jpg",
+        "name": "Shnitzel Viennese",
+        "description": "kotoletë me fileto pule të freskët, patate amerikane, kërpudha, rukola",
+        "price": "L780",
+        "category":"MainDishes"
+      },
+      {
+        "id": 56,
+        "photoUrl": "./IMAGES/Rock-Shrimp.jpg",
+        "name": "Rock Shrimp",
+        "description": "karkalec tempura me sos chilli, patate chips, vendosur në shportë gjethe jeshile",
+        "price": "L850",
+        "category":"MainDishes"
+      },
+      {
+        "id": 57,
+        "photoUrl": "./IMAGES/Fresh-Chicken-Fillet.jpg",
+        "name": "Fresh Chicken Fillet",
+        "description": "kroketë me djath dele, reçel kajsie",
+        "price": "L780",
+        "category":"MainDishes"
+      },
+      {
+        "id": 58,
+        "photoUrl": "./IMAGES/Chicken-Rolls.jpg",
+        "name": "Chicken Rolls",
+        "description": "role pule e mbushur me spinaq, pure patatesh, bizele, pesto e shtëpisë",
+        "price": "L780",
+        "category":"MainDishes"
+      },
+      {
+        "id": 59,
+        "photoUrl": "./IMAGES/Barbeque-Chicken-Wings.jpg",
+        "name": "Barbeque Chicken Wings",
+        "description": "krahë pule, patate amerikane, sos chilli, sos barbeque",
+        "price": "L550",
+        "category":"MainDishes"
+      }
+    ]
+  }
+  
