@@ -9,7 +9,7 @@ import Contact from "./Components/Contact";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Login from "./Components/Login.jsx";
-import Hero from "./Components/Hero.jsx";
+
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
           <Route path="./Login" element={<Login />}></Route>
         </Routes>
       </Router>
-      <Hero />
+      
     </>
   );
 }

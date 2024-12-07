@@ -16,7 +16,6 @@ const Navbar = () => {
 
   const handleSearchSubmit = (event) => {
     event.preventDefault();
-   
   };
 
   const toggleSearchVisibility = () => {
@@ -28,12 +27,10 @@ const Navbar = () => {
     setIsSearchVisible(false);
   };
 
-  
   const toggleLoginVisibility = () => {
     setIsLoginVisible(!isLoginVisible);
   };
 
-  
   const closeLoginForm = () => {
     setIsLoginVisible(false);
   };
@@ -110,10 +107,11 @@ const Navbar = () => {
               </form>
             )}
 
-          
-            <i className="fa-regular fa-user" onClick={toggleLoginVisibility}></i>
+            <i
+              className="fa-regular fa-user"
+              onClick={toggleLoginVisibility}
+            ></i>
 
-           
             {isLoginVisible && (
               <div className="login-form-container">
                 <button className="close-login-btn" onClick={closeLoginForm}>
@@ -131,73 +129,6 @@ const Navbar = () => {
           </div>
         </div>
       </header>
-
-      <div
-        id="carouselExampleFade"
-        className="carousel slide carousel-fade"
-        data-bs-ride="carousel"
-      >
-        <div className="carousel-inner">
-          
-          <div className="carousel-item active">
-            <img src="carusel1.jpg" className="d-block w-100" alt="Slide 1" />
-            <div className="carousel-caption d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle text-center">
-              <div>
-                <p className="first-paragraph">Foods that’s fast but never rushed</p>
-                <button className="btn btn-light">Order Now</button>
-              </div>
-            </div>
-          </div>
-
-         
-          <div className="carousel-item">
-            <img src="carusel2.jpeg" className="d-block w-100" alt="Slide 2" />
-            <div className="carousel-caption d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle text-center">
-              <div>
-                <p className="first-paragraph">Bringing flavor to your event</p>
-                <button className="btn btn-light">Order Now</button>
-              </div>
-            </div>
-          </div>
-
-          
-          <div className="carousel-item">
-            <img src="carusel3.jpeg" className="d-block w-100" alt="Slide 3" />
-            <div className="carousel-caption d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle text-center">
-              <div>
-                <p className="first-paragraph">Savour the moment with our catering</p>
-                <button className="btn btn-light">Order Now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleFade"
-          data-bs-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleFade"
-          data-bs-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
     </>
   );
 };
