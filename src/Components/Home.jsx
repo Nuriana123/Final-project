@@ -1,8 +1,14 @@
 import React from "react";
-import Pizza from "./Pizza";
+import Hero from "./Hero";
+import Carousel from "./Carousel";
 
 const Home = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Carousel></Carousel>
+      <Hero />
+    </div>
+  );
 };
 
 export default Home;
