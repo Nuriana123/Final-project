@@ -9,7 +9,7 @@ const Hero = () => {
         <p>Specialties like</p>
         <h1>Shrimp tacos</h1>
         <h2>Bringing people together</h2>
-        <img src="Tacos.jpg" alt="Tacos" />
+        <img src="IMAGES/Tacos-karkaleca.jpg" alt="Tacos" />
         <button className='taco-btn'>Order now</button>
       </div>
       <div className='salads'>

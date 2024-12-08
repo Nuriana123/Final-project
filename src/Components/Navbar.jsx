@@ -5,6 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Login from "./Login";
 
+
+
 const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [isSearchVisible, setIsSearchVisible] = useState(false);
@@ -66,7 +68,8 @@ const Navbar = () => {
 
         <div className="nav-bar">
           <div className="logo-menu-container">
-            <img src="/logo.png" alt="Logo" className="logo" />
+          <img src="/IMAGES/logo.png" alt="Logo" className="logo" />
+
             <ul className="menu">
               <li>
                 <Link to="/">Home</Link>
