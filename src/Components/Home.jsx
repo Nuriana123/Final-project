@@ -3,6 +3,8 @@ import Hero from "./Hero";
 import Carousel from "./Carousel";
 import ProductSection from "./ProductSection";
 import ProductPage from "./ProductPage";
+import FoodSection from "./FoodSection";
+
 
 
 const Home = () => {
@@ -12,6 +14,8 @@ const Home = () => {
       <Hero />
       <ProductSection />
       <ProductPage/>
+      <FoodSection/>
+      
      
     </div>
   );

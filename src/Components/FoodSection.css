@@ -1,0 +1,55 @@
+
+  .food-section {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; /* Qendrim vertikal */
+    background-color: black; /* Sfond i zi */
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px; /* Hapësirë nga anët */
+    overflow: hidden; 
+   
+  }
+  
+  .image-container {
+   
+    display: flex;
+    justify-content: center; /* Qendro imazhet horizontalisht */
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Kufizo përmasat e imazhit */
+   
+  }
+  
+  .food-text {
+    
+    text-align: center; /* Teksti i qendërzuar */
+  }
+  
+ 
+  
+  .food-text h2 {
+    margin: 20px 0;
+    font-size: 2.5rem;
+    color: orange; 
+  }
+  
+  .food-text button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .food-text button:hover {
+    background-color: darkorange;
+  }
+  img{
+    width: 60%;
+    margin-right: 4em;
+  }

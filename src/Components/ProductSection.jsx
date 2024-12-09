@@ -3,17 +3,19 @@ import "./ProductSection.css";
 
 const ProductSection = ({ products }) => {
   if (!products) {
-    // Render a loading message or fallback content if products is not defined
     return <p>Loading products...</p>;
   }
 
   return (
-    <div className='menu-paragraph'>
-      <p className='first-paragraph'>Choose your flavor</p>
-      <h1>The Best Pizza Menu In Tirana</h1>
-      <p>There’s always something interesting down here</p>
+    <div className="product-section">
+      {/* Menu Paragraph Section */}
+      <div className="menu-paragraph">
+        <p className="first-paragraph">Choose your flavor</p>
+        <h1>The Best Pizza Menu In Tirana</h1>
+        <p>There’s always something interesting down here</p>
+      </div>
 
-      {/* Render products only if they exist */}
+      {/* Render Products */}
       <div className="all-products">
         {products.length > 0 ? (
           products.map((product) => (

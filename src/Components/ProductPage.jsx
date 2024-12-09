@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import ProductSection from './ProductSection';
-import SingleProduct from './SingleProduct';
 import './ProductPage.css';
 
 export default function ProductPage() {
@@ -24,22 +23,8 @@ export default function ProductPage() {
 
   return (
     <div className="container">
-      <ProductSection />
-
-      {/* Shtimi i një rreshti për të shfaqur 4 produkte në rresht */}
-      <div className="row row-cols-1 row-cols-md-4 g-4">
-        {filteredProducts.length > 0 ? (
-          filteredProducts.map((product) => (
-            <div key={product.id} className="col">
-              <SingleProduct product={product} />
-            </div>
-          ))
-        ) : (
-          <div className="col-12">
-            <p>Products loading...</p>
-          </div>
-        )}
-      </div>
+      {/* Pass filteredProducts to ProductSection */}
+      <ProductSection products={filteredProducts} />
     </div>
   );
 }
