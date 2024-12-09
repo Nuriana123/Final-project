@@ -1,0 +1,84 @@
+.section-pic-background{
+    background-image: url('./IMAGES/backgroundimage.jpg');
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: flex-start; 
+    padding-left:40px ;
+}
+.section-pic-background button{
+    border-radius: 50px;
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+    font-family: "Open Sans", HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.section-pic-background p:nth-child(1){
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+    font-size: 24px;
+    line-height: 24px;
+}
+.section-pic-background p:nth-child(2){
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+    font-size: 48px;
+    line-height: 57px;
+}
+.section-pic-background p:nth-child(3){
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+    font-size: 48px;
+    line-height: 57px;
+}
+.section-pic-background p:nth-child(4){
+    font-family: "Open Sans", HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+}
+.book-your-table{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+.book-your-table div:nth-child(2){
+    background-color: #f7f2e2;
+}
+.reservation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.reservation p:first-child{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgb(247,149,29);
+    font-family: "Open Sans", HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.reservation p:nth-child(2){
+    font-style: normal;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 53px;
+    color: black;
+    font-family: Oswald, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}

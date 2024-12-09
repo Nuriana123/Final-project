@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./Pizza.css";
 import SingleProduct from "./SingleProduct";
+
 export default function Pizza() {
   const [pizza, setPizza] = useState([]);
   const [category, setCategory] = useState("Pizza");
@@ -17,7 +18,6 @@ export default function Pizza() {
         setPizza(result.products);
       });
   }
-
   return (
     <div>
       <div className="all-button-categories">
@@ -32,8 +32,9 @@ export default function Pizza() {
         </button>
         <button onClick={() => setCategory("MainDishes")}>Main Dishes</button>
       </div>
+
       <div className="all-products">
-        {pizza.length > 0
+         {pizza.length > 0
           ? pizza
               .filter((element) => {
                 return element.category === category;
@@ -41,7 +42,7 @@ export default function Pizza() {
               .map((product) => {
                 return <SingleProduct product={product} />;
               })
-          : "Products loading"}
+          : "Products loading"} *
       </div>
     </div>
   );

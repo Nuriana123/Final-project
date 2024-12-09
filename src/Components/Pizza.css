@@ -11,5 +11,11 @@
     margin: 0px 100px 0px 100px;
 }
 .all-button-categories button{
-    
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    font-family:Oswald, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 36px;
 }
