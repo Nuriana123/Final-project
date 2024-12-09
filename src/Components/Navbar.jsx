@@ -5,34 +5,40 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Login from "./Login";
 
-
-
 const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [isSearchVisible, setIsSearchVisible] = useState(false);
   const [isLoginVisible, setIsLoginVisible] = useState(false);
 
+  // Funksion për të menaxhuar ndryshimet në inputin e kërkimit
   const handleSearchChange = (event) => {
     setSearchQuery(event.target.value);
   };
 
+  // Funksion për të trajtuar dërgimin e formularit të kërkimit
   const handleSearchSubmit = (event) => {
     event.preventDefault();
+    // Mund të shtoni logjikën për të dërguar kërkimin në backend ose për të filtruar rezultatet
+    console.log(searchQuery);
   };
 
+  // Funksion për të ndërruar shfaqjen e kutisë së kërkimit
   const toggleSearchVisibility = () => {
     setIsSearchVisible(!isSearchVisible);
   };
 
+  // Funksion për të pastruar kërkimin dhe fshehur kutinë e kërkimit
   const handleClearSearch = () => {
     setSearchQuery("");
     setIsSearchVisible(false);
   };
 
+  // Funksion për të hapur dhe mbyllur formularin e login
   const toggleLoginVisibility = () => {
     setIsLoginVisible(!isLoginVisible);
   };
 
+  // Funksion për të mbyllur formularin e login
   const closeLoginForm = () => {
     setIsLoginVisible(false);
   };
@@ -68,7 +74,7 @@ const Navbar = () => {
 
         <div className="nav-bar">
           <div className="logo-menu-container">
-          <img src="/IMAGES/logo.png" alt="Logo" className="logo" />
+            <img src="/IMAGES/logo.png" alt="Logo" className="logo" />
 
             <ul className="menu">
               <li>

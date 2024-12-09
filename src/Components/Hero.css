@@ -1,55 +1,67 @@
-
-
 .hero {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .tacos {
-    flex: 1;
-    background-color: #F7941D;
-    padding: 40px;
-    
-  }
-  
-  .salads {
-    flex: 1;
-    background-color: #D6E664;
-    padding: 10px;
-    
-  }
-  
-  button {
-    padding: 10px;
-    border: none;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .taco-btn {
-    background-color:white;
-    color: black;
-  }
-  
-  .salad-btn {
-    background-color: white;
-    color: black;
-    
-  }
-  
-  .tacos h1, .salads h1 {
-    margin-bottom: 20px;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Siguron që div-et të kenë të njëjtën lartësi */
+  gap: 0; /* Hiq çdo hapësirë midis div-eve */
+  padding: 0; /* Hiq padding-in brenda .hero */
+  margin: 0; /* Hiq çdo hapësirë të jashtme */
+  box-sizing: border-box;
+}
+
+.tacos, .salads {
+  flex: 1;
+  padding: 10px; /* Lë një padding minimal brenda div-eve */
+  color: white;
+  display: flex;
+  flex-direction: column; /* Elementet e brendshme janë në kolonë */
+  justify-content: flex-start; /* Elementet fillojnë nga lart */
+  align-items: flex-start; /* Elementet janë të rreshtuara nga e majta */
+  margin: 0; /* Hiq çdo hapësirë të jashtme */
+}
+
+.tacos {
+  background-color: #F7941D;
+}
+
+.salads {
+  background-color: #D6E664;
+}
+
+.tacos img, .salads img {
+  max-width: 80%; /* Bëhet më kompakt dhe përshtatet me tekstin */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px; /* Vendos një hapësirë të vogël midis fotos dhe tekstit */
+}
+
+
+
+.taco-btn {
+  background-color: white;
+  color: black;
+}
+
+.salad-btn {
+  background-color: white;
+  color: black;
+}
+
+/* Butonat që janë në të njëjtin rresht */
+.buttons-container {
+  display: flex; /* Përdor flex për rreshtimin horizontal */
+  justify-content: flex-start; /* Butonat janë alignuar në anën e majtë */
+  gap: 10px; /* Hapësirë midis butonave */
+  width: 100%;
+  margin-top: 10px;
+}
+
+.tacos h1, .salads h1 {
+  margin: 0; /* Hiq çdo hapësirë të jashtme për titujt */
+  margin-bottom: 10px; /* Vetëm pak hapësirë poshtë titullit */
+  text-align: left; /* Aligjimi i titujve në anën e majtë */
+}
+
+.salads p {
+  margin: 0; /* Hiq çdo hapësirë të jashtme për tekstet */
+  text-align: left; /* Aligjimi i përshkrimeve në anën e majtë */
+}

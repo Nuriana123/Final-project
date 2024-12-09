@@ -23,7 +23,7 @@ export default function ProductPage() {
 
   return (
     <div className="container">
-      {/* Pass filteredProducts to ProductSection */}
+      
       <ProductSection products={filteredProducts} />
     </div>
   );
