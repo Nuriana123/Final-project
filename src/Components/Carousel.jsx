@@ -2,6 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "./Carusel.css"
 
 const Carousel = () => {
   return (
@@ -32,7 +33,7 @@ const Carousel = () => {
             <img src="IMAGES/Western-Burger.jpg" className="d-block w-100" alt="Slide 2" />
             <div className="carousel-caption d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle text-center">
               <div>
-                <p className="first-paragraph">Bringing flavor to your event</p>
+                <h2 className="first-paragraph">Bringing flavor to your event</h2>
                 <button className="btn btn-light">Order Now</button>
               </div>
             </div>
