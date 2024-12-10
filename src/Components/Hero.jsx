@@ -1,25 +1,30 @@
-import React from 'react'
-import "./Hero.css"
-
+import React from 'react';
+import "./Hero.css";
 
 const Hero = () => {
   return (
-    <div className='hero'>
-      <div className='tacos'>
-        <p>Specialties like</p>
+    <div className="hero">
+      <div className="tacos">
+        <h3>Specialties like</h3>
         <h1>Shrimp tacos</h1>
-        <h2>Bringing people together</h2>
-        <img src="Tacos.jpg" alt="Tacos" />
-        <button className='taco-btn'>Order now</button>
+        <h3>Bringing People Together</h3>
+        <img src="/IMAGES/taco1.png" alt="Tacos" />
+        <div className="buttons-container">
+          <button className="taco-btn">Order now</button>
+        </div>
       </div>
-      <div className='salads'>
-        <p>Fresh</p>
+
+      <div className="salads">
+        <h3>Fresh</h3>
         <h1>Salads test</h1>
-        <p>Super delicious</p>
-        <button className='salad-btn'>Order now</button>
+        <h3>Super delicious</h3>
+        <img src="/IMAGES/Sallate-Uova1.png" alt="Salad" />
+        <div className="buttons-container">
+          <button className="salad-btn">Order now</button>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Hero;

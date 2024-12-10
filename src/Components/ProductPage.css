@@ -1,0 +1,6 @@
+/* Styles for the general container of the ProductPage */
+.container {
+  max-width: 1200px;  /* Adjust as necessary */
+  margin: 0 auto;
+  padding: 20px;
+}

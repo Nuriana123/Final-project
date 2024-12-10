@@ -14,7 +14,7 @@ const Carousel = () => {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
-              src="Big-Black-Burger.jpg"
+              src="IMAGES/carusel1.jpeg"
               className="d-block w-100"
               alt="Slide 1"
             />
@@ -29,7 +29,7 @@ const Carousel = () => {
           </div>
 
           <div className="carousel-item">
-            <img src="carusel2.jpeg" className="d-block w-100" alt="Slide 2" />
+            <img src="IMAGES/Western-Burger.jpg" className="d-block w-100" alt="Slide 2" />
             <div className="carousel-caption d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle text-center">
               <div>
                 <p className="first-paragraph">Bringing flavor to your event</p>
@@ -39,7 +39,7 @@ const Carousel = () => {
           </div>
 
           <div className="carousel-item">
-            <img src="carusel3.jpeg" className="d-block w-100" alt="Slide 3" />
+            <img src="IMAGES/catering.jpeg" className="d-block w-100" alt="Slide 3" />
             <div className="carousel-caption d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle text-center">
               <div>
                 <p className="first-paragraph">
