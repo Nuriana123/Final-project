@@ -1,23 +1,45 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
+  const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!email || !password) {
-      setError('Email and password are required');
+
+    if (!username || !password) {
+      setError("Username and password are required");
       return;
     }
 
-    // Mock login logic (replace with actual API call)
-    if (email === 'user@example.com' && password === 'password123') {
-      alert('Login successful');
-      // Redirect or store token
-    } else {
-      setError('Invalid email or password');
+    try {
+      const response = await fetch("https://dummyjson.com/auth/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          username,
+          password,
+          expiresInMins: 30, 
+        }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || "Login failed");
+      }
+
+      const data = await response.json();
+      setMessage("Login successful! Token: " + data.token);
+      setError(null);
+      console.log("Login response:", data);
+      
+    } catch (err) {
+      setError(err.message);
+      setMessage("");
     }
   };
 
@@ -25,14 +47,13 @@ function Login() {
     <div className="login-form">
       <form onSubmit={handleSubmit}>
         <h2>Sign in</h2>
-        <hr></hr>
         <div>
-          <label>Username or Email*</label>
+          <label>Username*</label>
           <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Enter your email"
+            type="text"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            placeholder="Enter your username"
           />
         </div>
         <div>
@@ -44,11 +65,9 @@ function Login() {
             placeholder="Enter your password"
           />
         </div>
-        {error && <div style={{ color: 'red' }}>{error}</div>}
+        {error && <div style={{ color: "red" }}>{error}</div>}
+        {message && <div style={{ color: "green" }}>{message}</div>}
         <button type="submit">Login</button>
-        <h5>Lost Your Password?</h5>
-        <hr></hr>
-        <h5>No account yet?  Create an account</h5>
       </form>
     </div>
   );
