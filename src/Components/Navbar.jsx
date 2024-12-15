@@ -1,48 +1,70 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Login from "./Login";
 import Menu from "./Menu";
-
+import { CartContext } from "./CartContext";
 
 const Navbar = () => {
-  const [searchQuery, setSearchQuery] = useState("");
   const [isSearchVisible, setIsSearchVisible] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
   const [isLoginVisible, setIsLoginVisible] = useState(false);
+  const [data, setData] = useState([]);
+  const [shoppingCartTotal, setShoppingCartTotal] = useState(0);
+  const cartContext = useContext(CartContext);
 
-  // Funksion për të menaxhuar ndryshimet në inputin e kërkimit
-  const handleSearchChange = (event) => {
-    setSearchQuery(event.target.value);
-  };
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/elements.json");
+        if (!response.ok) {
+          throw new Error("Failed to fetch elements.json");
+        }
+        const result = await response.json();
+        console.log("result Navbar", result);
+        setData(result.products);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
 
-  // Funksion për të trajtuar dërgimin e formularit të kërkimit
-  const handleSearchSubmit = (event) => {
-    event.preventDefault();
-    // Mund të shtoni logjikën për të dërguar kërkimin në backend ose për të filtruar rezultatet
-    console.log(searchQuery);
-  };
+    fetchData();
 
-  // Funksion për të ndërruar shfaqjen e kutisë së kërkimit
+    if (cartContext.cart.length > 1) {
+      const total = cartContext.cart.reduce((prev, curr) => {
+        return (
+          parseInt(prev.price.substring(1)) + parseInt(curr.price.substring(1))
+        );
+      });
+      console.log("total cart", total);
+      setShoppingCartTotal(total);
+    } else if (cartContext.cart.length === 1) {
+      setShoppingCartTotal(cartContext.cart[0].price);
+    }
+  }, [cartContext.cart]);
+
+  const filteredResults = data.filter(
+    (item) =>
+      item.name.toLowerCase().includes(searchQuery.toLowerCase()) &&
+      searchQuery.length > 0
+  );
+
   const toggleSearchVisibility = () => {
     setIsSearchVisible(!isSearchVisible);
   };
 
-  // Funksion për të pastruar kërkimin dhe fshehur kutinë e kërkimit
-  const handleClearSearch = () => {
-    setSearchQuery("");
-    setIsSearchVisible(false);
-  };
-
-  // Funksion për të hapur dhe mbyllur formularin e login
   const toggleLoginVisibility = () => {
     setIsLoginVisible(!isLoginVisible);
   };
 
-  // Funksion për të mbyllur formularin e login
   const closeLoginForm = () => {
     setIsLoginVisible(false);
+  };
+
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
   };
 
   return (
@@ -103,19 +125,29 @@ const Navbar = () => {
             </div>
 
             {isSearchVisible && (
-              <form className="search-form" onSubmit={handleSearchSubmit}>
-                <input
-                  type="text"
-                  className="search-bar"
-                  placeholder="Search..."
-                  value={searchQuery}
-                  onChange={handleSearchChange}
-                />
-                <button type="submit" className="search-btn">
-                  <i className="fas fa-search"></i>
-                </button>
-                <i className="fas fa-times" onClick={handleClearSearch}></i>
-              </form>
+              <div className="search-bar-container">
+                <div className="search">
+                  <div className="searchInputs">
+                    <input
+                      type="text"
+                      placeholder="Search Products..."
+                      value={searchQuery}
+                      onChange={handleSearchChange}
+                    />
+                    <div className="searchIcon">
+                      <i className="fas fa-search"></i>
+                    </div>
+                  </div>
+                  <div className="dataResult">
+                    {filteredResults.length > 0 &&
+                      filteredResults.map((item) => (
+                        <div key={item.id} className="dataItem">
+                          {item.name}
+                        </div>
+                      ))}
+                  </div>
+                </div>
+              </div>
             )}
 
             <i
@@ -133,8 +165,12 @@ const Navbar = () => {
             )}
 
             <i className="fa-regular fa-heart"></i>
+
             <div className="btn-menu">
-              <button>0 Items: L 0</button>
+              <button>
+                {cartContext.cart.length} Items: {shoppingCartTotal} L
+              </button>
+
               <i className="fa-sharp fa-thin fa-cart-shopping-fast"></i>
             </div>
           </div>

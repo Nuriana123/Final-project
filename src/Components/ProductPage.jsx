@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import ProductSection from './ProductSection';
-import './ProductPage.css';
+import React, { useState, useEffect } from "react";
+import ProductSection from "./ProductSection";
+import "./ProductPage.css";
+import SingleProduct from "./SingleProduct";
 
 export default function ProductPage() {
   const [pizza, setPizza] = useState([]);
-  const [category, setCategory] = useState("Pizza");
 
   useEffect(() => {
     getPizzaProducts();
-  }, [category]);
+  }, []);
 
   function getPizzaProducts() {
-    fetch("elements.json")
+    fetch("/elements.json")
       .then((res) => res.json())
       .then((result) => {
         console.log("result", result);
@@ -19,11 +19,15 @@ export default function ProductPage() {
       });
   }
 
-  const filteredProducts = pizza.filter((element) => element.category === category);
+  const filteredProducts = pizza.filter(
+    (element) => element.category === "Pizza"
+  );
 
   return (
     <div className="container">
-      
+      {/* {filteredProducts.map((product) => {
+        return <SingleProduct product={product}/>;
+      })} */}
       <ProductSection products={filteredProducts} />
     </div>
   );

@@ -34,3 +34,6 @@ width: 100%;
   flex-direction: row;
   justify-content: space-between;
 }
+.bi-cart-dash:hover{
+  background-color: orange;
+}

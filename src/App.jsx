@@ -6,26 +6,31 @@ import Menu from "./Components/Menu";
 import Catering from "./Components/Catering";
 import Shop from "./Components/Shop";
 import Contact from "./Components/Contact";
+import Login from "./Components/Login";
+import ShoppingCart from "./Components/ShoppingCart";  // Importo ShoppingCart
+import { CartProvider } from "./Components/CartContext"; 
+
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Login from "./Components/Login.jsx";
-
 
 function App() {
   return (
-    <>
+    <CartProvider>
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="Menu" element={<Menu />}></Route>
-          <Route path="Catering" element={<Catering />}></Route>
-          <Route path="Shop" element={<Shop />}></Route>
-          <Route path="Contact" element={<Contact />}></Route>
-          <Route path="./Login" element={<Login />}></Route>
+          <Route path="/" element={<Home />} />
+          <Route path="Menu" element={<Menu />} />
+          <Route path="Catering" element={<Catering />} />
+          <Route path="Shop" element={<Shop />} />
+          <Route path="Contact" element={<Contact />} />
+          <Route path="Login" element={<Login />} />
+          
+          
+          <Route path="cart" element={<ShoppingCart />} />
         </Routes>
       </Router>
-    </>
+    </CartProvider>
   );
 }
 
