@@ -1,0 +1,165 @@
+
+.catering-description{
+    width: 100%;
+    margin: 0 auto;
+}
+.catering-title{
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+}
+span{
+    font-weight: 50;
+}
+.catering-content{
+
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: center;
+}
+.catering-link{
+    color: #F7951D;
+    text-decoration: none;
+
+}
+.catering-main-image{
+    width: 100%;
+    max-width: 70%;
+    margin-top: 2em;
+   margin-left: 8em;
+   height: auto;
+}
+.main-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.description{
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+    width: 100%
+
+}
+.description-content{
+    background-color: #F7F2E2;
+    width: 80%;
+    max-width: 800px;
+    padding: 3em;
+
+}
+.description-title{
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.sushi-img{
+    max-width: 800px;
+    width: 80%;
+
+  
+
+}
+.check-list{
+    font-size: 25px;
+    margin-left: 2em;
+    margin-right: 2em;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(7, 7, 7);
+   
+}
+.menu-title{
+    margin-left: 2.5em;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 26px;
+
+}
+h5{
+    font-size: 36px;
+    font-weight: 900;
+    margin-left: 1.7em;
+}
+.description-list{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-left: 1.7em;
+
+}
+.flex-container{
+   position: relative;
+
+    
+}
+.img-icon {
+    position: absolute;
+    top: 30%;
+    width: 5%;
+   }
+   .testimonials {
+     background-image:   url(catering-testimonials.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+
+}
+.catering-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 1200px;
+  }
+  
+  .catering-text {
+    flex: 1;
+    max-width: 60%;
+    padding-right: 1.5rem;
+  }
+  
+  .catering-text h1,
+  .catering-text h2 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .catering-text p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .reasons-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .reasons-list li {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .catering-image {
+    flex: 1;
+    max-width: 40%;
+    text-align: center;
+  }
+  
+  .catering-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
